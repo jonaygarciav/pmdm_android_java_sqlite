@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -83,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
                 db.insert("Usuarios", null, nuevoRegistro);
 
                 db.close();
+
+                String mensaje = "Usuario " + nom + " con código " + cod + " insertado correctamente.";
+                Toast toast1 = Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_SHORT);
+                toast1.show();
             }
         });
 
@@ -132,6 +137,10 @@ public class MainActivity extends AppCompatActivity {
                 db.update("Usuarios", valores, "codigo=" + cod, null);
 
                 db.close();
+
+                String mensaje = "Usuario con código " + cod + " actualizado correctamente.";
+                Toast toast1 = Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_SHORT);
+                toast1.show();
             }
         });
 
@@ -151,6 +160,10 @@ public class MainActivity extends AppCompatActivity {
                 db.delete("Usuarios", "codigo=" + cod, null);
 
                 db.close();
+
+                String mensaje = "Usuario con código " + cod + " actualizado correctamente.";
+                Toast toast1 = Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_SHORT);
+                toast1.show();
             }
         });
 
