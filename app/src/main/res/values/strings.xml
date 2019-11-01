@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SQLite</string>
+    <string name="tv_txt_codigo">Código (Num): </string>
+    <string name="tv_txt_nombre">Nombre: </string>
+    <string name="bt_txt_insertar">Insertar</string>
+    <string name="bt_txt_actualizar">Actualizar</string>
+    <string name="bt_txt_eliminar">Eliminar</string>
+    <string name="bt_txt_consultar">Consultar</string>
 </resources>
